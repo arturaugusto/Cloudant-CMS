@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+  <html>
+  <head>
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="./vendor/bulma.min.css">
+    <meta name="viewport" content="user-scalable=no,initial-scale=1,maximum-scale=1,minimum-scale=1,width=device-width">
+  </head>
+  <body>
+    <nav class="navbar is-white" role="navigation" aria-label="main navigation">
+      <div class="navbar-brand">
+        <a class="navbar-item" href="/">
+          Cloudant CMS
+        </a>
+
+        <!--
+        <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+        </a>
+        -->
+      </div>
+
+      <div id="navbarBasicExample" class="navbar-menu">
+        <div class="navbar-start">
+          <!--
+          <a class="navbar-item">
+            Home
+          </a>
+          -->
+        </div>
+
+        <!-- not implemented
+        <div class="navbar-end">
+          <div class="navbar-item">
+            <div class="buttons">
+              <a class="button is-primary">
+                <strong>Sign up</strong>
+              </a>
+              <a class="button is-light">
+                Log in
+              </a>
+            </div>
+          </div>
+        </div>
+        -->
+      </div>
+    </nav>
+    <br>
+
+    <div class="container">
+      <div id="panels-container" class="columns"></div>
+      <div id="json-editor-container"></div>
+    </div>
+
+    <script type="text/javascript" src="./index.js"></script>
+    
+    <script src="https://pagecdn.io/lib/ace/1.4.5/ace.js" integrity="sha256-5Xkhn3k/1rbXB+Q/DX/2RuAtaB4dRRyQvMs83prFjpM=" crossorigin="anonymous"></script>
+    <script src="https://pagecdn.io/lib/ace/1.4.5/mode-json.js" integrity="sha256-WH3EjHkUnhbOt45gfu5MvEYSqvYUXE25FwAtxukgi9U=" crossorigin="anonymous"></script>
+
+  </body>
+</html>
