@@ -38,7 +38,7 @@ export default (function(id, container, type) {
         // if its a new doc, replace the url to
         // /:schema/:id
         if (id === 'new') {
-          page.redirect('/'+res.id.replace(/_([^_]*)$/,'\/$1'));
+          page('/'+res.id.replace(/_([^_]*)$/,'\/$1'));
         }
 
       }).catch((err) => {

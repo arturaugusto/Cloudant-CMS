@@ -1,4 +1,31 @@
 export default {
+  schema: [
+    {
+      schema: {
+        "title": "Schema",
+        "type": "object",
+        "options": {
+          //"selectPropeties": true
+        },
+        //"required": [
+        //  'a'
+        //],
+        "properties": {
+          "a": {
+            "description": "A string",
+            "type": "string"
+          },
+          "b": {
+            "title": "b objects",
+            "type": "array",
+            "items": {
+              "$ref": "#/"
+            }
+          }
+        }
+      }
+    }
+  ],
   person: [
     {
       schema: {
@@ -19,9 +46,6 @@ export default {
             "description": "First and Last name",
             "minLength": 4,
             "default": "Artur Augusto Martins",
-            "options": {
-              "format": "code"
-            }
           },
           "age": {
             "type": "integer",

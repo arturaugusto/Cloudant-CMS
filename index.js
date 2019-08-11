@@ -164,7 +164,7 @@ page('/', (ctx, next) => {
 
       newItemAEl.addEventListener('click', (e) => {
         page('/'+schemaName+'/new');
-        e.preventDefault();
+        //e.preventDefault();
       })
 
     }).catch(function (err) {
