@@ -4,7 +4,7 @@
   "main": "index.js",
   "license": "MIT",
   "dependencies": {
-    "ajv": "^6.10.0",
+    "ajv": "^6.12.3",
     "page": "^1.11.4",
     "pouchdb": "^7.1.1",
     "rfc6902": "^3.0.4"
